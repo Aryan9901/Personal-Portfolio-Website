@@ -3,7 +3,18 @@
  *
  * @format
  */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
 
+body,
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
 @import url("https://fonts.googleapis.com/css?family=Literata:400,600,700&amp;display=swap|Open%20Sans");
 body {
 	line-height: 1.7;
@@ -1030,9 +1041,21 @@ a:hover {
 	background: transparent;
 	color: #ff3d4f;
 }
-
-.portfolio .btn-group > .btn {
+#portfolio .container .btn-group {
+	vertical-align: middle;
+	align-content: space-around;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* padding: 0 7vw; */
+	padding-right: 10vw;
+}
+#portfolio .container .btn-group > .btn {
 	box-shadow: none !important;
+	/* background-color: red; */
+	width: 15%;
 }
 
 .portfolio .btn-group:not(:first-child) > .btn,
